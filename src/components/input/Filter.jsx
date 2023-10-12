@@ -20,7 +20,6 @@ const Filter = () => {
         value={selectedRegion}
       >
         <option value="">Select Region</option>
-        <option value="all">All</option>
         <option value="Eastern Europe">Eastern Europe</option>
         <option value="Southern Europe">Southern Europe</option>
         <option value="Western Europe">Western Europe</option>
