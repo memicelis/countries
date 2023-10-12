@@ -1,20 +1,14 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { filterCountries, setSearchTerm } from "../../redux/countries/countriesSlice";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setRegion, setSearchTerm } from '../../redux/countries/countriesSlice';
 
 const Filter = () => {
   const dispatch = useDispatch();
-  const [selectedRegion, setSelectedRegion] = useState("");
-  const searchTerm = useSelector((state) => state.countries.searchTerm);
-
+  const selectedRegion = useSelector((state) => state.countries.selectedRegion);
   const handleRegionChange = (event) => {
-    const selectedValue = event.target.value;
-    setSelectedRegion(selectedValue);
-
-    // Reset the search term when a region is selected
-    dispatch(setSearchTerm(""));
-
-    dispatch(filterCountries(selectedValue));
+    const filterValue = event.target.value;
+    dispatch(setSearchTerm(''));
+    dispatch(setRegion(filterValue));
   };
 
   return (
