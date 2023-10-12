@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import Home from './components/Home'
+import CountryDetails from './components/Details';
+
 import './App.css';
 
 function App() {
@@ -8,12 +11,9 @@ function App() {
     <BrowserRouter>
     <NavBar />
     <Routes>
-      <Route />
-      <Route />
+      <Route index element= {<Home />}/>
+      <Route path="/:code" element={<CountryDetails />}/>
     </Routes>
-  <h1 className="text-3xl font-bold underline">
-  Hello world!
-</h1>
 </BrowserRouter>
 </>
 )
