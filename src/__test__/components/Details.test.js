@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux'; // Import the Provider from react-redux
+import { BrowserRouter as Router } from 'react-router-dom';
 import store from '../../redux/store'; // Import your Redux store
 import Details from '../../components/CountryList';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 test('renders CountryList without errors', () => {
-     render(
-        <Provider store={store}>
-          <Router>
-            <Details />
-          </Router>
-        </Provider>
-    );
+  render(
+    <Provider store={store}>
+      <Router>
+        <Details />
+      </Router>
+    </Provider>,
+  );
 });

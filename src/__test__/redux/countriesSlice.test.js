@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import countriesReducer, { setSearchTerm,setRegion } from '../../redux/countries/countriesSlice';
+import countriesReducer, { setSearchTerm, setRegion } from '../../redux/countries/countriesSlice';
 
 describe('countriesSlice initial state', () => {
   let store;
@@ -32,4 +32,3 @@ describe('countriesSlice initial state', () => {
     expect(state.selectedRegion).toBe('New Region');
   });
 });
-
