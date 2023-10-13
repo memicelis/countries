@@ -12,7 +12,7 @@ const Filter = () => {
   };
 
   return (
-    <div className="w-2/3">
+    <div className="w-2/3 md:w-48">
       <select
         className="w-full bg-dark border border-light text-white py-2 px-4 rounded-md placeholder:text-white"
         id="region"
