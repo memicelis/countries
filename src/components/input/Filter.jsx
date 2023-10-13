@@ -12,9 +12,9 @@ const Filter = () => {
   };
 
   return (
-    <div>
+    <div className="w-2/3">
       <select
-        className="bg-dark border border-light text-white py-2 px-4 rounded-md placeholder:text-white"
+        className="w-full bg-dark border border-light text-white py-2 px-4 rounded-md placeholder:text-white"
         id="region"
         onChange={handleRegionChange}
         value={selectedRegion}

@@ -11,10 +11,10 @@ const Search = () => {
   };
 
   return (
-    <div>
+    <div className="w-2/3 mb-2">
       <input
         type="text"
-        className="bg-dark border border-light text-white py-2 px-4 rounded-md placeholder:text-white"
+        className="w-full bg-dark border border-light text-white py-2 px-4 rounded-md placeholder:text-white"
         placeholder="Search for a country..."
         value={searchTerm}
         onChange={handleSearchChange}
