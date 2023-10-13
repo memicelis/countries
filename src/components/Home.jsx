@@ -9,7 +9,7 @@ const Home = () => (
     <div className="flex flex-col items-center">
       <p className="w-full text-center text-white font-bold text-2xl">Europe</p>
       <div className="grid place-items-center w-full">
-        <img src={logo} className="w-1/2" alt="Logo" />
+        <img src={logo} className="w-1/3" alt="Logo" />
       </div>
       <p className="w-full text-center text-white font-bold text-xl mb-4">All Countries</p>
     </div>
